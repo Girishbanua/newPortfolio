@@ -1,0 +1,10 @@
+.dark-theme {
+  background-color: #222831;
+  color: whitesmoke;
+}
+.dark-theme #education{
+  color: whitesmoke;
+}
+.dark-theme #education h3{
+    color: var(--blue);
+}

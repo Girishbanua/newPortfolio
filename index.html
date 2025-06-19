@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./dark.css">
+  </head>
+  <body>
+    <nav>
+      <div>
+        <h1 href="#home">Girish Banua</h1>
+      </div>
+      <div class="navlist">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="#admin" onclick="showAdmin()">Admin</a>
+      </div>
+      <button onclick="toggleTheme()">
+        <img src="./images/dark-mode.svg" alt="" />
+      </button>
+    </nav>
+
+    <main>
+      <section id="home">
+        <div>
+          <img src="./images/new.jpg" alt="image" />
+        </div>
+        <div class="homeText">
+          <h1>Hi, I'm Girish!💖</h1>
+          <p>
+            <b>Developer</b> by passion, <b>educator</b> by choice. <br />
+            <i>Let’s code and grow together.</i>
+          </p>
+          <div class="actionbtns">            
+          <button class="btn" id="contactbtn">
+            <a href="#contact">Contact</a>
+          </button>
+          <button class="btn2" id="contactbtn">
+            <a href="#about">Know More</a>
+          </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Hi, I’m Girish Banua – a passionate and curious individual with a love😍
+          for learning and building meaningful digital experiences. With a
+          <b>strong foundation in</b> both <b>front-end and back-end </b>development, I enjoy
+          crafting websites🌐 and applications that are not only functional but
+          also user-friendly and visually appealing🥰.
+          <br /><br />I believe in writing clean🧹, efficient code and constantly
+          expanding my skill set to stay updated with the latest technologies.
+          Whether it's solving complex problems, collaborating on creative
+          ideas, or turning concepts into reality, I strive to bring value to
+          every project I work on. <br />
+          <br />When I’m not coding, you’ll find me exploring new tech tools⚙️,
+          learning something new, or helping others grow through knowledge
+          sharing. I'm always excited to take on new challenges and grow as a
+          developer. <br /><br /><i>Let’s build something awesome together!</i>
+        </p>
+      </section>
+      <section id="education">
+        <h2>Education</h2>
+        <div>
+          <h3>Post Graduation</h3>
+          <p>Masters of Computer Application</p>
+          <i>Orissa University of Agriculture and Technology</i>
+        </div>
+        
+        <div>
+          <h3>Graduation</h3>
+          <p>Bachelors of Computer Application</p>
+          <i>Pragati Degree College, Bhawanipatna</i>
+        </div>
+        
+        <div>
+          <h3>Intermediate</h3>
+          <p>CBSE <small>[ PCM CS ]</small></p>
+          <i>Kendriya Vidyalaya Sangathan, I.T.B.P. Karera, Madhya Pradesh</i>
+        </div>
+        
+        <div>
+          <h3>Matriculation</h3>
+          <p>CBSE</p>
+          <i>Kendriya Vidyalaya Sangathan, Bhawanipatna</i>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div>
+          <div class="project">
+            <img src="./images/shoecart.webp" alt="project">
+            <h3>Shoe Cart Site</h3>
+            <p>Shoe cart website that is responsive and has interactivity</p>
+            <button class="btn2"><a href="https://shoeecommercepage.netlify.app/" target="_blank">View</a></button>
+          </div>
+          <div class="project">
+            <img src="./images/project2.webp" alt="project">
+            <h3>Loop Studio Landing Page</h3>
+            <p>Landing Page of loop studio</p>
+            <button class="btn2"><a href="https://loopstudilandingpage.netlify.app/" target="_blank">View</a></button>
+          </div>
+          <div class="project">
+            <img src="./images/project3.webp" alt="project">
+            <h3>Dessert Website</h3>
+            <p>A Dessert website that simply implements add to cart functionality and item's price calculation.</p>
+            <button class="btn2"><a href="https://foodcartdemo.netlify.app/" target="_blank">View</a></button>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me☎️</h2>
+        <div id="contactForm">
+          <form>
+          <label>Name: <input type="text" name="name" required /></label><br />
+          <label>Email: <input type="email" name="email" required /></label
+          ><br />
+          <label>Message: <textarea name="message" rows="5" required></textarea></label
+          ><br />
+          <button type="submit">Send</button>
+        </form>
+        </div>
+      </section>
+
+      <section id="admin">
+        <h2>Admin</h2>
+        <div id="loginForm" class="hidden">
+          <label>Username: <input type="text" id="adminUser" /></label><br />
+          <label>Password: <input type="password" id="adminPass" /></label
+          ><br />
+          <button onclick="loginAdmin()">Login</button>
+        </div>
+        <div id="userResponses" class="hidden">
+          <h3>User Responses</h3>
+          <div id="responsesContainer"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
