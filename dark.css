@@ -1,10 +1,14 @@
 .dark-theme {
-  background-color: #222831;
+  background-color: rgb(0 7 24);
+    color: whitesmoke;
+    --blue: #14233b;
+    --lightBlue: rgb(29 33 59);
+}
+.dark-theme #education {
   color: whitesmoke;
 }
-.dark-theme #education{
+.dark-theme #education h3,
+.dark-theme #education h2,
+.dark-theme #projects h2 {
   color: whitesmoke;
-}
-.dark-theme #education h3{
-    color: var(--blue);
 }

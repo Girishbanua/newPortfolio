@@ -6,6 +6,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./dark.css">
+    <link rel="stylesheet" href="./responsive.css">
   </head>
   <body>
     <nav>
@@ -36,10 +37,10 @@
             <i>Let’s code and grow together.</i>
           </p>
           <div class="actionbtns">            
-          <button class="btn" id="contactbtn">
+          <button class="contactbtn" id="btn1">
             <a href="#contact">Contact</a>
           </button>
-          <button class="btn2" id="contactbtn">
+          <button class="contactbtn" id="btn2">
             <a href="#about">Know More</a>
           </button>
           </div>
@@ -65,6 +66,7 @@
           developer. <br /><br /><i>Let’s build something awesome together!</i>
         </p>
       </section>
+
       <section id="education">
         <h2>Education</h2>
         <div>
@@ -94,24 +96,24 @@
 
       <section id="projects">
         <h2>Projects</h2>
-        <div>
+        <div id="projectContainer">
           <div class="project">
             <img src="./images/shoecart.webp" alt="project">
             <h3>Shoe Cart Site</h3>
             <p>Shoe cart website that is responsive and has interactivity</p>
-            <button class="btn2"><a href="https://shoeecommercepage.netlify.app/" target="_blank">View</a></button>
+            <button id="btn2"><a href="https://shoeecommercepage.netlify.app/" target="_blank">View</a></button>
           </div>
           <div class="project">
             <img src="./images/project2.webp" alt="project">
             <h3>Loop Studio Landing Page</h3>
             <p>Landing Page of loop studio</p>
-            <button class="btn2"><a href="https://loopstudilandingpage.netlify.app/" target="_blank">View</a></button>
+            <button id="btn2"><a href="https://loopstudilandingpage.netlify.app/" target="_blank">View</a></button>
           </div>
           <div class="project">
             <img src="./images/project3.webp" alt="project">
             <h3>Dessert Website</h3>
             <p>A Dessert website that simply implements add to cart functionality and item's price calculation.</p>
-            <button class="btn2"><a href="https://foodcartdemo.netlify.app/" target="_blank">View</a></button>
+            <button id="btn2"><a href="https://foodcartdemo.netlify.app/" target="_blank">View</a></button>
           </div>
         </div>
       </section>
